@@ -46,8 +46,8 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabindex=""
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto lg:w-52">
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -68,51 +68,56 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <input type="text" placeholder="Search" class="input text-center" />
+                <div class="navbar-end  space-x-4">
+                    
+                    <input type="text" placeholder="Search" class="hidden text-center lg:input lg:text-center  "  />
+                    <img class="" src="images/figma/search.png" alt="">
                     <a class="btn btn-primary border-none bg-[#FF4240] rounded-lg">Get Ticket</a>
                 </div>
             </div>
         </div>
         <div class="container mx-auto px-8 lg:px-32 my-12">
-            <div class="carousel w-full ">
-                slide-1
-                <div id="slide1" class="carousel-item relative w-full bg-[url(../images/1.png)] h-[90vh] ">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="relative w-[1170px] h-[600px]">
+                <div class="carousel w-full ">
+                    slide-1
+                    <div id="slide1" class="carousel-item relative w-full max-h-screen bg-no-repeat bg-[url(../images/1.png)]">
+                        <div class="absolute flex justify-between transform -translate-y-16 space-x-8 left-10 bottom-80 ">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                slide-2
-                <div id="slide2" class="carousel-item relative w-full bg-[url(../images/2.png)]  ">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    slide-1
+                    <div id="slide1" class="carousel-item relative w-full max-h-screen bg-no-repeat bg-[url(../images/2.png)]">
+                        <div class="absolute flex justify-between transform left-4 ">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                slide-3
-                <div id="slide3" class="carousel-item relative w-full bg-[url(../images/3.png)] h-[90vh]">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    slide-1
+                    <div id="slide1" class="carousel-item relative w-full max-h-screen bg-no-repeat bg-[url(../images/1.png)]">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                slide-4
-                <div id="slide4" class="carousel-item relative w-full bg-[url(../images/4.png)] h-[90vh]">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+             
+                    slide-4
+                    <div id="slide4" class="carousel-item relative w-full bg-[url(../images/4.png)] h-[90vh]">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-
-
+    
             </div>
-            <div class=" mx-auto max-h-40 w-[500px] bg-[#131318] text-white px-8 py-8 translate-x-60 -translate-y-60">
+            <div class=" mx-auto max-h-40 w-[500px] bg-[#131318] text-white px-8 py-8 absolute bottom-20 right-10">
                 <h4 class="text-2xl font-extrabold ">Meet all the heroes from the field</h4>
                 <p class="text-xs mt-4">
                     The winning team not only lifts the championship cup but also earns the honor of being recognized as
                     the best in the world, solidifying their place in hockey history. </p>
             </div>
+            </div>
+           
         </div>
     </header>
     <main>
@@ -451,23 +456,23 @@
         </section>
         <!-- get in touch section -->
         <section class="container mx-auto px-8 lg:px-32  my-12 mt-10 ">
-            <div>
-                <h2 class="text-4xl font-extrabold text-[#131318] text-center mb-6">Get In Touch</h2>
-                <p class="lg:max-w-3xl mx-auto text-[#13131899]">Feel free to get in touch if you have any questions or need further assistance; our dedicated customer support team is here to help!</p>
-            </div>
             <div class="">
+                <h2 class="text-4xl font-extrabold text-[#131318] text-center mb-6">Get In Touch</h2>
+                <p class="lg:max-w-3xl mx-auto text-center text-[#13131899]">Feel free to get in touch if you have any questions or need further assistance; our dedicated customer support team is here to help!</p>
+            </div>
+            <div class=" grid grid-cols-1 lg:grid-cols-2 mt-24 ">
                 <div class=" grid grid-cols-1 gap-6 py-6">
-                    <div class="w-90 h-54 mx-auto border bg-slate-200">
-                        <img src="images/figma/phone.png" alt="">
+                    <div class=" w-[374px]  mx-auto border bg-[#BCED6D1A] px-6 py-12 rounded-lg">
+                        <img class="" src="images/figma/phone.png" alt="">
                         <p>Phone Number : <br> 
                             (+62) 123-321-543</p>
                     </div>
-                    <div class="w-90 h-54 mx-auto border bg-slate-200">
-                        <img src="images/figma/msg.png" alt="">
+                    <div class="w-[374px]  mx-auto border bg-[#BCED6D1A] px-6 py-12 rounded-lg">
+                        <img class="" src="images/figma/msg.png" alt="">
                         <p>Email : <br>
                             hockeys@support.com</p>
                     </div>
-                    <div class="w-90 h-54 mx-auto border bg-slate-200">
+                    <div class="w-[374px]  mx-auto border bg-[#BCED6D1A] px-6 py-12 rounded-lg ">
                         <img src="images/figma/location.png" alt="">
                         <p>Location : <br>
                             152/1 Mohakhali Wireless Gate</p>
@@ -475,69 +480,99 @@
                     
                 </div>
                 <div>
-                    <div class="max-w-md w-full bg-white p-6 rounded-md shadow-md">
+                    <div class=" col-span-2 max-w-md w-full bg-white p-6 rounded-md shadow-md ">
 
                         <h2 class="text-2xl font-semibold mb-6">Contact Us</h2>
                 
-                        <form>
+                        <form class="grid grid-cols-2 gap-8">
                 
                             <div class="mb-4">
-                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2"> Your Name:</label>
+                                <input type="text" id="name" placeholder="Enter Your Full Name" name="name" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
                             </div>
                 
                             <div class="mb-4">
-                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                                <input type="email" id="email" placeholder=" Enter Your Your Email" name="email" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2"> Subject:</label>
+                                <input type="text" id="name" placeholder=" Enter Your Subject" name="name" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
                             </div>
                 
                             <div class="mb-4">
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2"> Phone Number:</label>
+                                <input type="text" id="name" placeholder=" Enter Your Phone Number" name="name" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                            </div>
+                
+                            <div class="mb-4 col-span-2">
                                 <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-                                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required></textarea>
+                                <textarea id="message" name="message" rows="7" placeholder="Message" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required></textarea>
                             </div>
-                
-                            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
-                                Submit
-                            </button>
+                            <div>
+                                <button class="btn btn-wide  text-white bg-[#FF4240] w-full px-8">Send Message</button>
+                            </div> <br>
+                       
                 
                         </form>
                     </div>
                 </div>
-                <!-- social media section -->
-                <div class=" my-12 mt-10">
-                    <h3 class="text-center font-extrabold mb-6 ">Social Media</h3>
-                    <div class="flex justify-center space-x-4 items-center mx-auto" >
-                        <div><img src="images/figma/twitter.png" alt=""></div>
-                        <div><img src="images/figma/facebook.png" alt=""></div>
-                        <div><img src="images/figma/insta.png" alt=""></div>
-                        
-                    </div>
+               
+            </div>
+             <!-- social media section -->
+             <div class=" my-12 mt-10">
+                <h3 class="text-center font-extrabold mb-6 ">Social Media</h3>
+                <div class="flex justify-center space-x-4 items-center mx-auto" >
+                    <div><img src="images/figma/twitter.png" alt=""></div>
+                    <div><img src="images/figma/facebook.png" alt=""></div>
+                    <div><img src="images/figma/insta.png" alt=""></div>
+                    
                 </div>
             </div>
         </section>
 
     </main>
-    <footer class="footer p-10 bg-neutral text-neutral-content">
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav>
+    <footer>
+       <div class="  footer p-8 lg:p-36  my-12 mt-10 bg-neutral text-neutral-content">
+        <nav class="">
+            <header class="footer-title ">
+              <h2 class="mb-4 font-extralight text-3xl text-[#FFF]">Get In Touch</h2>
+              <p class="mb-4">Feel free to get in touch with us if you have any questions or concerns; we're here to help!</p>
+              <div class="flex space-x-2 py-4" >
+                <img src="images/figma/msg (2).png" alt="">
+                <p>hockeys@support.com</p>
+              </div>
+              <div class="flex space-x-2">
+                <img src="images/figma/phn.png" alt="">
+                <p>(+62) 123-321-543</p>
+              </div>
+            </header> 
+           
+          </nav> 
+          <nav>
+            <header class="footer-title">Company</header> 
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News & Article</a>
+            <a class="link link-hover">Legal Notice</a>
+          </nav> 
+          <nav>
+            <header class="footer-title">Support</header> 
+            <a class="link link-hover">Help Center</a>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Ticket Support</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+          <nav>
+            <header class="footer-title">Services</header> 
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lession</a>
+            <a class="link link-hover">Private Lession</a>
+            <a class="link link-hover">Hockey’s for Kid</a>
+            <a class="link link-hover">Hockey’s for Adult</a>
+          </nav>
+       </div>
       </footer>
 </body>
 
